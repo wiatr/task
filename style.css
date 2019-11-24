@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pf-suggestion-container {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #eee;
+    width: 70%;
+    box-sizing: border-box;
+    z-index: 10000;
+}
+
+.pf-suggestion-container.open {
+    display: block;
+}
+
+.pf-2-col {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.pf-suggestion-container .pf-col-0 {
+    width: 50%;
+    float: left;
+}
+
+.pf-suggestion-container .pf-col-1 {
+    width: 50%;
+    float: left;
+}
+.pf-group-title {
+    font-weight: 400;
+    font-size: 18px;
+    color:#0068B4;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.pf-suggestion-container div.pf-branding {
+    display: none;
+    font-size: 10px;
+    color: #ccc;
+    text-align: right;
+    padding: 5px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border-bottom:#0068B4 dotted 1px;
+        
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion {
+    padding: 5px;
+    margin: 0;
+    color:#0068B4;
+    cursor: deaflut;
+    overflow: hidden;
+    zoom: 1;
+}
+
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion b {
+    color: #000;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion.pf-selected {
+    background: #dedede;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-body {
+    display: table-cell;
+    vertical-align: middle;
+    width: 10000px;
+    font-weight: 400;
+}
+
+span.pf-personalized-suggestion {
+    color: #52188c !important;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-body span.pf-highlight {
+    font-weight: 700;
+    color: #000;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-body span.pf-highlight:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-body span.pf-suggestion-body-text1 {
+    display: block;
+    font-size: 14px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-body span.pf-suggestion-body-text2 {
+    display: block;
+    font-size: 12px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li span.pf-suggestion-right-price .pull-left {
+    padding-right: 10px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-left {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-left img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    text-align: right;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right .pf-suggestion-right-price {
+    display: block;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right .pf-suggestion-right-unit-price {
+    display: none;
+    font-size: 10px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right .pf-suggestion-right-price + span.pf-suggestion-right-oldprice {
+    background: red;
+    font-size: 10px;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right .pf-suggestion-right-oldprice {
+    display: block;
+    text-decoration: line-through;
+    font-size: 11px;
+    color:red;
+}
+
+.pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right .pf-suggestion-right-discount {
+    display: block;
+    background: red;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #fff;
+    position: relative;
+    padding: 2px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pf-suggestion-container ul.pf-suggestion-list {
+        font-size: 12px;
+    }
+
+    .pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-body span.pf-suggestion-body-text2 {
+        font-size: 11px;
+    }
+
+    .pf-suggestion-container ul.pf-suggestion-list li .pf-suggestion .pf-suggestion-right .pf-suggestion-right-discount {
+        display: none;
+    }
+}
